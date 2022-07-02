@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="500" poster="imagens/650.jpg" controls>
+        <source src="midia/Meu-Video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-1.m4v" type="video/m4v">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <source src="midia/Meu-Video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <video width="500" poster="imagens/Print000.jpg" controls>
+        <source src="midia/Meu-Video2.mp4" type="video/mp4">
+        <source src="midia/Meu-Video2-1.m4v" type="video/m4v">
+        <source src="midia/Meu-Video2.webm" type="video/webm">
+        <source src="midia/Meu-Video2.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/eF9Qoc6p_4Q" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body{
+  background-color: #d6fde9;
+  font: normal 16px Arial, Verdana, serif;
+}
+h1{
+  color: #1e402f;
+}
+h1#principal{
+  text-align: center;
+  background-color: #3c805e;
+  color: white;
+}
+h2{
+  text-align: center;
+  color: #3c805e;
+}
+.basico{
+  color: #3c805e;
+  font-weight: bold;
+}
+.intermediario{
+  color: #80793c;
+  font-weight: bold;
+}
+.avancado{
+  color: #803c3c;
+  font-weight: bold;
+}
+.destaque{
+  background-color: #c5c56070;
+}
+
+p{
+  text-align: justify; /*alinhamento dos dois lados*/
+  text-indent: 30px; /*Identação da 1ª palavra*/
+}

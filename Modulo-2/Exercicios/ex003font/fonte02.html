@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font.css">
+  <title>Fontes Externas em CSS</title>
+  <style>
+   @font-face {
+     font-family: 'love larry';
+     src: url('fonts/love larry.otf') format('opentype'), 
+          url('fonts/love larry.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+
+     /*
+      Tipos de format()
+      - opentype (otf)
+      - truetype (ttf)
+      - emnedded-opentype
+      - truetype-aat (Apple advanced typography)
+      - svg
+     */
+   }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:1em;
+    }
+     h1{
+      font-family:'love larry', Times, serif; /*mesmo nome dado em @font-face*/
+      font-size: 3em;
+      font-weight: normal;
+    } 
+    h2{
+      font: bold 2em 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Título Teste</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum 
+    aliquid fugiat obcaecati accusantium quam numquam incidunt, esse 
+    laborum nihil soluta quod placeat quis ut corrupti quidem animi, 
+    repellendus nulla voluptate?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum deleniti maiores incidunt at. Corporis consequatur voluptatibus esse voluptate minus quia 
+      iure quaerat. Itaque sequi laudantium delectus aspernatur omnis cumque?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, 
+      inventore? Nobis id similique consequatur facere, soluta, praesentium earum sed est voluptatum facilis saepe nam molestiae aperiam aut accusantium eius ipsa?</p>
+</body>
+</html>

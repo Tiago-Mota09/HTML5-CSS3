@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    </head>
+<body>
+    <h1>Minha Página</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi 
+        architecto provident expedita libero sint veritatis ratione natus 
+        velit. </p>
+       
+        <iframe src="paginas-extras/pag005.html" width="350px" sandbox="sandbox" referrerpolicy="no-referrer">
+            <!--sandbox="sandbox" para bloquear(completamente) cadastros maliciosos feitos de outros sites  
+                sandbox="allow-same-origin" para bloquear(exceto conteúdo de mesma origem) cadastros maliciosos feitos de outros sites
+                sandbox="allow-same-forms" para bloquear(exceto formulários) cadastros maliciosos feitos de outros sites
+                sandbox="allow-same-scripts" para bloquear(exceto scripts) cadastros maliciosos feitos de outros sites
+                referrerpolicy="no-referrer" para não coletar dados de navegação>-->
+            <p>Infelizmente seu navegador não é compativel!</p>
+        </iframe> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi 
+        architecto provident expedita libero sint veritatis ratione natus 
+        velit. </p>
+    <h2>Conteúdos dentro do iframe</h2>  
+    <h3>Vídeos</h3>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/265045525?h=217b87fac0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <h3>Mapas do Google</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.902767715206!2d-46.54367290319824!3d-23.533376683290268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e3ffb8b4213%3A0x6cf4c8754bcc1519!2sAv.%20Melchert%2C%2037%20-%20Ch%C3%A1cara%20Seis%20de%20Outubro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003508-000!5e0!3m2!1spt-BR!2sbr!4v1656462074520!5m2!1spt-BR!2sbr" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h3>Mapas do Waze</h3>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-23.533397&lon=-46.534940&ct=livemap" width="700" height="300" allowfullscreen></iframe>
+    <h3>Google Docs</h3>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vS4SEeOFaEtjHI6QrLCNB4H_769hV_C36_tzOSr24L7O_GQcOHy8MdGdTNS4D_ee2bUValGDEQvxYnR/pub?embedded=true" width="700" height="300"></iframe>
+</body>
+</html>

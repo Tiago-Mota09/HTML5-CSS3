@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping tags</title>
+  <script>
+    
+    function ola(){
+      alert("Olá")
+    }
+    function boasVindas(){
+      alert("Seja bem vindo (a) à minha página web.")
+    }
+    function navegue(){
+      alert("Navegue à vontade.")
+    }
+    function esqueca()
+    {
+      // código da função
+      alert("Mas não se esqueça...")
+    }
+    function cafe()
+    {
+      // código da função
+      alert("...de pagar um café.")
+    }
+  </script>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(112, 112, 112);
+      margin: 0px;
+    }
+    header{
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+    }
+    nav{
+      background-color: rgb(148, 148, 148);
+      padding: 3px;
+      box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+    }
+    nav > a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+    
+    nav > a:hover{
+      text-decoration: underline;
+    }
+    main{
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px 20px;
+      box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.973);
+
+    }
+    article{
+      background-color: lightgray;
+    }
+    article > aside{
+      background-color: rgb(153, 153, 153);
+    }
+    footer{
+      background-color: rgb(148, 148, 148);
+      box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+
+      color: white;
+      text-align: center;
+      padding: 1px;
+      margin: 0;
+    }
+    div > p{ /*Afeta apenas o paragrafo filho da DIV*/
+      display: none;
+    }
+    div:hover > p{ /*Para mostrar o paragrafo escondido*/
+      display: block;
+      color: white;
+      background-color: black;
+    }
+    div:hover{
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <h1>Meu Site</h1>
+        <nav>
+          <a href="#"onclick="ola()">Click1</a>
+          <a href="#"onclick="boasVindas()">Click2</a>
+          <a href="#"onclick="navegue()">Click3</a>
+          <a href="#"onclick="esqueca()">Click4</a>
+          <a href="#"onclick="cafe()">Click5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes politica e tecnologia</p>
+        </section>
+        <section id="noticias">
+          <article>
+            <h2>Notícia sobre cinema</h2>
+            <p><strong> Lorem </strong>ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. <em> Maiores</em> pariatur modi animi, repudiandae inventore porro explicabo accusantium eligendi dolorum! Recusandae, consectetur blanditiis vitae quo eum exercitationem incidunt officia mollitia omnis.</p>
+              <aside>
+                <p><ins>Artigo</ins> escrito por Tiago Mota</p>
+              </aside>
+          </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <abbr title="Mota">Tiago Mota</abbr></p>
+        <div> 
+          Passe o mouse aqui. 
+          <p>
+            <script>
+            hoje = new Date()
+            document.write(hoje.toLocaleString())
+            </script>
+          </p>
+        </div>
+    </footer>
+</body>
+</html>

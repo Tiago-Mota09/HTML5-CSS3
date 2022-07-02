@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        thead{
+            background-color: rgb(128, 128, 128);
+
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(228,228,228);
+        }
+        div#container{
+            overflow-x: auto;/*com scroll responsivo no eixo X apenas na tabela*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas responsivas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Veniam, fugit animi 
+        iusto, repudiandae dolores dolore 
+        accusantium eum vel velit quos sequi 
+        magnam nesciunt ullam, maiores expedita. 
+        Consequuntur facere mollitia numquam.</p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgroup" span="3"><!--span="2" = para afetar a mesma estilização para 3 colunas juntas-->
+            </colgroup>
+            <caption>Tabelas Responsivas</caption>
+                <thead>
+                    <tr>
+                       <th>Produto</th>
+                       <th>Jan</th>
+                       <th>Fev</th>
+                       <th>Mar</th>
+                       <th>Abr</th>
+                       <th>Mai</th>
+                       <th>Jun</th>
+                       <th>Jul</th>
+                       <th>Ago</th>
+                       <th>Set</th>
+                       <th>Out</th>
+                       <th>Nov</th>
+                       <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tv 40"</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>home Theater</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung galaxy S20</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>IPad Mini</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Playstation 4</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Lava louças</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon Echo</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    </body>     
+</html>

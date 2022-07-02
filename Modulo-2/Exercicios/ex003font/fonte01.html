@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font.css">
+  <title>Fontes em CSS</title>
+  <style>
+    @import url('http://fonts.googleapis.com/css2?family=Work+Snas,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body{
+      font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+      /*Medidas Absolutas:
+      cm = (centimetro)Não recomendado, 
+      mm = (milímetro)Não recomendado, 
+      in = (polegadas)Não recomendado, 
+      px = (pixel), 
+      pt = (pontos)Não recomendado, 
+      pc = (paica)Não recomendado
+
+      Medidas Relativas:
+      em = (tamanho relativo ao tamanho(MAIÚSCULO) atual da fonte(1em = 16px)(rem é a mesma coisa, mas referente ao Body)),
+      ex = (tamanho relativo ao altura(X) atual da fonte)Não recomendado,
+      rem = (tamanho relativo ao hut fonte configurada no body)Não recomendado,
+      vw = (view width - Largura da View Port(tamanho da tela em %))Não recomendado,
+      vh = (view height - Altura da View Port(tamanho da tela em %))Não recomendado,
+      % = Não recomendado
+      */
+      font-size:1em;
+    }
+     h1{
+      /*font-family: 'Work Sans', sans-serif;
+        font-weight: bolder; === lighter, mormal, bold, bolder OU numérica de 100 a 900
+        font-size: 3em;
+        font-style: italic; */
+
+      /* ShortHand font
+        - font-style -> font-weight -> font-size -> font-family
+        SUBSTITUI AS 4 LINHAS DE CIMA POR APENAS 1 LINHA COMO A SEGUIR:
+      */
+      font:italic bolder 3em 'Work Sans', sans-serif;
+    } 
+    h2{
+      font: bold 2em 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum 
+    aliquid fugiat obcaecati accusantium quam numquam incidunt, esse 
+    laborum nihil soluta quod placeat quis ut corrupti quidem animi, 
+    repellendus nulla voluptate?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum deleniti maiores incidunt at. Corporis consequatur voluptatibus esse voluptate minus quia 
+      iure quaerat. Itaque sequi laudantium delectus aspernatur omnis cumque?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, 
+      inventore? Nobis id similique consequatur facere, soluta, praesentium earum sed est voluptatum facilis saepe nam molestiae aperiam aut accusantium eius ipsa?</p>
+</body>
+</html>

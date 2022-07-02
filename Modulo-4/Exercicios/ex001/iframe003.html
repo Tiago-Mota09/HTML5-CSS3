@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 95vw;
+            height: 500px;
+            display: block; /* para deixar de ser inline */
+            margin: auto; /*para centralizar */
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi 
+        architecto provident expedita libero sint veritatis ratione natus 
+        velit. </p>
+        <ul>
+            <!-- target="frame" para abrir a pagina dentro do iframe -->
+            <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+            <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+            <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+        </ul>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi 
+        architecto provident expedita libero sint veritatis ratione natus 
+        velit. </p>
+        <!-- Nome para abrir uma pagina dentro do iframe quando clicar no link -->
+        <!--src="paginas-extras/pag001.html" para abrir pag001 como padrão -->
+        <!--srcdoc="" para abrir pag001 como padrão -->
+        
+        <iframe srcdoc="<h1> Escolha uma das opções acima </h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi 
+            architecto provident expedita libero sint veritatis ratione natus 
+            velit.</p><img src='paginas-extras/thor.jpg'>">
+            <p>Infelizmente seu navegador não é compativel!</p>
+        </iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi 
+            architecto provident expedita libero sint veritatis ratione natus 
+            velit. </p>
+</body>
+</html>

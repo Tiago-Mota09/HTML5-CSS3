@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+    ou simplesmente aumente e diminua o tamnaho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" 
+        type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png"
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzido Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop> <!--auto: só responderá quando a páagina fizer a leitura de todo o conteúdo/metadata responderá quando a página fizer a leitura dos arquivos mais importantes/ none só responderá quando for clicado-->>
+        <source src="midia/Lullaby.mp3" type="audio/mpeg">
+        <source src="midia/Lullaby.mp3" type="audio/ogg">
+        <source src="midia/Lullaby.mp3" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio.
+                <a href="midia/Lullaby.mp3">lique aqui para baixar o arquivo MP3</a>
+            </p>
+
+    </audio>
+</body>
+</html>
