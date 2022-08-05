@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/tela.css" media="screen"> <!--Media screen para estilização exclusiva para a tela-->
-    <link rel="stylesheet" href="estilos/impressora.css" media="print"><!--Media screen para estilização exclusiva para Impressão-->
+    <!-- Media Query = Media type(Tipos de Midia) + Media features(Caracteristicas de Midia-Tela) -->
+    <link rel="stylesheet" href="estilos/style.css" media="all"> 
+    <!--Media screen para estilização em todos os dispositivos(Media Type)-->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)">
+    <!--Media screen para estilização exclusiva para tela(Media Type)- and (orientation:portrait) para caracterisca da tela em Retrato(Media Feature) "Sempre entre parenteses"-->
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape">
+    <!--Media screen para estilização exclusiva para tela(Media Type)and (orientation:landscape) para caracterisca da tela em Paiagem(Media Feature) "Sempre entre parenteses"-->
+    
     <title>Media Query</title>
 </head>
 <body>
     <header>
-        <h1>Notícias</h1>
+        <h1>Mude a orientação do seu Dispositivo</h1>
         <menu>
             <ul>
                 <li>Esportes</li>
