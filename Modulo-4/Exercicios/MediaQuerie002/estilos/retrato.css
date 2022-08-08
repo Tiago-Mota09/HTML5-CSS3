@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Estilo para Aparelho em pé (portrait) */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+body{
+ background: url(../imagens/cev-portrait.jpg);
+ background-position: center bottom;
+}

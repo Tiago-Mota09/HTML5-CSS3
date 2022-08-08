@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Estilo para Aparelho deitado (landscape) */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+body{
+ background: url(../imagens/cev-landscape.jpg);
+ background-position: left bottom; /*imagem ficará em baixo a esquerda*/
+}
