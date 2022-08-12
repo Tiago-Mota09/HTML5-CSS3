@@ -1,0 +1,35 @@
+ /*DECLARAÇÕES GERAIS*/
+ *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain; /*Para caber a imagem inteira*/
+    background-repeat: no-repeat;
+}
+h1{
+    color: white;
+    text-shadow:  2px 2px 0px #1526a7;
+    padding: 10px;
+}
+
+/*DECLARAÇÕES RETRATO*/
+@media screen and (orientation: portrait){
+    body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+    }
+}
+
+/*DECLARAÇÕES GERAIS PAISAGEM*/
+@media screen and (orientation: landscape){
+body{
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom; /*imagem ficará em baixo a esquerda*/
+    background-repeat: no-repeat;
+    }
+}
