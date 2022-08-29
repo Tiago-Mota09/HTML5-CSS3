@@ -32,6 +32,10 @@ TV: acima de 1200px;
     img#print{ display: block;}
     img#pc{ display: none;}
     img#tv{ display: none;}
+
+    main::after{
+        content: 'Essa impressão foi feita com estilização por BreakPoint Devices';
+    }
 }
 /* @media screen and (max-wiidth: 600px) {
     
