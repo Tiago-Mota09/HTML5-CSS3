@@ -22,6 +22,7 @@ TV: acima de 1200px;
     }
     main{
        border: 2px solid black; 
+       width: 90vw;
     }
     main h1{
         text-shadow: none;
@@ -35,6 +36,7 @@ TV: acima de 1200px;
 
     main::after{
         content: 'Essa impressão foi feita com estilização por BreakPoint Devices';
+        text-decoration: overline;
     }
 }
 /* @media screen and (max-wiidth: 600px) {
